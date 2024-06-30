@@ -1,3 +1,180 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('otf'),
+         url('../fonts/SourceSansPro-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('../spincycle_ot-webfont.woff') format('woff'),
+         url('../spincycle_ot-webfont.woff') format('woff');
+    
+  }
+
 body{
+    background-image: url(images/object.png);
     margin: 0px;
+    background-repeat: no-repeat; 
+    width: 100%;
+    /* background-size: contain; */
 }
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 30px 30px 30px 30px;
+  }
+  
+  nav img {
+    height: auto; 
+    width: auto; 
+  }
+  
+  nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+  }
+  
+  nav li {
+    display: inline-block; 
+    margin-right: 20px; 
+  }
+  
+  nav a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    font-family: 'Spin Cycle OT', sans-serif;
+    font-size: 1em;
+  }
+  nav a:hover {
+    color: #ccc; 
+  }
+
+
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .getSchooled{
+    margin-inline: 150px;
+    margin-top:65px;
+    margin-bottom:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    font-family:   'Source Sans Pro', sans-serif;
+  }
+  .getSchooled div{
+    display: flex;
+    
+  }
+  .getSchooled span{
+    padding-inline: 20px;
+  font-family:   'Source Sans Pro', sans-serif;
+  }
+  .getSchooled h1{
+    font-size: 6.5em;
+    margin: 0px;
+  }
+  #learnPro{
+    margin-inline: 30vw;
+    margin-bottom:70px;
+    color: white;
+    font-family:   'Source Sans Pro', sans-serif;
+    
+  }
+  #learnPro span{
+    font-weight: bold;
+    color: #c271ff;;
+  }
+  .getSchooled button {
+    background-color: #c271ff; /* Indigo purple color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; 
+    margin: 40px;
+    /* Normal padding */
+    border-radius: 15px; /* Curved corners with 5px radius */
+    color: white; /* Text color (white for better visibility) */
+    cursor: pointer; /* Indicate clickable behavior */
+    font-weight: bold; /* Optional: Make button text bold */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  main .proSmilers{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 150px;
+    margin-bottom:70px;
+    /* justify-content: space-between;  */
+    align-items: center;
+  }
+  main .proSmilers div{
+    align-items: center;
+    padding:10px
+   
+
+  }
+  /* main .proSmilers h3{
+    font-size: 1em;
+    color:white
+  }
+  main .proSmilers p{
+    font-size: 0.5em;
+    color:white
+  }
+  main .proSmilers img{
+    width: 5em;
+  } */
+  main .proSmilers {
+    display: flex; /* Arrange elements horizontally */
+    align-items: center; /* Vertically center content within .proSmilers */
+    justify-content: space-between; /* Distribute elements with space */
+    padding: 1rem; /* Add some padding for aesthetics */
+    width: 60vw;
+  }
+  main .proSmilers div {
+    width: 40vw;
+  }
+  main .proSmilers h3 {
+    font-size: 1.5vw; /* Adjust starting size and use vw for viewport width */
+    color: white;
+    font-family: 'Spin Cycle OT', sans-serif;
+  }
+  
+  main .proSmilers p {
+    font-size: 1vw; /* Adjust starting size and use vw for viewport width */
+    color: white;
+    font-family:   'Source Sans Pro', sans-serif;
+  }
+  
+  main .proSmilers img {
+    width: 10vw; /* Adjust starting size and use vw for viewport width */
+    max-width: 100px; /* Set a maximum width to prevent excessive growth */
+    border-radius: 50%; /* Set border radius to 50% for circle */
+    overflow: hidden;
+  }
+  
+  /* Media Queries for Additional Adjustments (Optional) */
+  @media (min-width: 768px) { /* For screens wider than 768px */
+    main .proSmilers h3 {
+      font-size: 1.2rem; /* Set a larger font size for wider screens */
+    }
+    main .proSmilers p {
+      font-size: 0.8rem; /* Set a slightly larger font size for wider screens */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For screens narrower than 480px */
+    main .proSmilers {
+      flex-direction: column; /* Stack elements vertically on narrow screens */
+    }
+    main .proSmilers img {
+      width: 15vw; /* Adjust image width for narrower screens */
+    }
+  }
