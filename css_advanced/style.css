@@ -208,6 +208,7 @@ color: white;
   }
   .tutorialCard{
     margin: 15px;
+    
   }
   .rating{
     display: flex;
@@ -227,4 +228,22 @@ color: white;
     max-width: 100px; 
     border-radius: 50%; 
     overflow: hidden;
+    padding-right: 15px;
+  }
+  .play-button {
+    /* Position the button absolutely */
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    /* Transform to center the button within the card */
+    /* transform: translate(-50%, -50%); */
+    /* Adjust button size and z-index for better positioning */
+    width: 80px;
+    height: 80px;
+    z-index: 2; /* Ensure the button appears on top of other content */
+  }
+  
+  .play-button img {
+    width: 100%; /* Display image within the button's dimensions */
+    height: auto; /* Maintain image aspect ratio */
   }
