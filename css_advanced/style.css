@@ -17,8 +17,8 @@ body{
     background-image: url(images/object.png);
     margin: 0px;
     background-repeat: no-repeat; 
-    width: 100%;
-    /* background-size: contain; */
+    /* width: 130%; */
+    /* background-size:auto; */
 }
 nav {
     display: flex; 
@@ -98,15 +98,15 @@ nav {
     color: #c271ff;;
   }
   .getSchooled button {
-    background-color: #c271ff; /* Indigo purple color */
-    border: none; /* Remove default button border */
+    background-color: #c271ff; 
+    border: none; 
     padding: 10px 20px; 
     margin: 40px;
-    /* Normal padding */
-    border-radius: 15px; /* Curved corners with 5px radius */
-    color: white; /* Text color (white for better visibility) */
-    cursor: pointer; /* Indicate clickable behavior */
-    font-weight: bold; /* Optional: Make button text bold */
+
+    border-radius: 15px; 
+    color: white; 
+    cursor: pointer; 
+    font-weight: bold; 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
   main .proSmilers{
@@ -114,7 +114,6 @@ nav {
     flex-direction: row;
     margin-inline: 150px;
     margin-bottom:70px;
-    /* justify-content: space-between;  */
     align-items: center;
   }
   main .proSmilers div{
@@ -135,10 +134,10 @@ nav {
     width: 5em;
   } */
   main .proSmilers {
-    display: flex; /* Arrange elements horizontally */
-    align-items: center; /* Vertically center content within .proSmilers */
-    justify-content: space-between; /* Distribute elements with space */
-    padding: 1rem; /* Add some padding for aesthetics */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 1rem; 
     width: 60vw;
   }
   main .proSmilers div {
@@ -163,24 +162,7 @@ nav {
     overflow: hidden;
   }
   
-  
-  @media (min-width: 768px) { 
-    main .proSmilers h3 {
-      font-size: 1.2rem; 
-    }
-    main .proSmilers p {
-      font-size: 0.8rem; 
-    }
-  }
-  
-  @media (max-width: 480px) { 
-    main .proSmilers {
-      flex-direction: column; 
-    }
-    main .proSmilers img {
-      width: 15vw; 
-    }
-  }
+
 
   #quote {
 background-color: #c271ff;
@@ -199,12 +181,23 @@ color: white;
   }
 
   #popularTutorial{
-    display: flex; /* Arrange elements horizontally */
-    align-items: center; /* Vertically center content within .proSmilers */
-    justify-content: space-between; /* Distribute elements with space */
-    padding: 1rem; /* Add some padding for aesthetics */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 1rem; 
     width: 60vw;
     align-items:baseline;
+    font-family:   'Source Sans Pro', sans-serif;
+  }
+  #tutorialTitle h2{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:200;
+  }
+  #tutorialTitle span{
+    color: #c271ff;
+    font-weight: bold; 
+
   }
   .tutorialCard{
     margin: 15px;
@@ -233,21 +226,18 @@ color: white;
     padding-right: 15px;
   }
   .play-button {
-    /* Position the button absolutely */
     position: absolute;
     top: 25%;
     left: 35%;
-    /* Transform to center the button within the card */
-    /* transform: translate(-50%, -50%); */
-    /* Adjust button size and z-index for better positioning */
+    
     width: 80px;
     height: 80px;
-    z-index: 2; /* Ensure the button appears on top of other content */
+    z-index: 2; 
   }
   
   .play-button img {
-    width: 100%; /* Display image within the button's dimensions */
-    height: auto; /* Maintain image aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   #freeMembership{
@@ -257,10 +247,9 @@ color: white;
     text-align: center;
   }
   #freeMembership div{
-    display: flex; /* Arrange elements horizontally */
-    /* align-items: center; Vertically center content within .proSmilers */
-    /* justify-content: space-between; Distribute elements with space */
-    padding: 1rem; /* Add some padding for aesthetics */
+    display: flex; 
+    
+    padding: 1rem; 
     width: 90vw;
    
   }
@@ -268,23 +257,29 @@ color: white;
     display: flex;
     flex-direction: column;
      align-items:center; 
-    
+     font-family: 'Source Sans Pro', sans-serif;
    
   }
   #freeMembership h2{
     padding-top: 50px;
     padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:200;
+  }
+  #freeMembership h2 span{
+    color: #c271ff;
+    font-weight: bold;
   }
  #freeMembership  button {
-    background-color: #c271ff; /* Indigo purple color */
-    border: none; /* Remove default button border */
+    background-color: #c271ff; 
+    border: none; 
     padding: 10px 20px; 
     margin: 40px;
-    /* Normal padding */
-    border-radius: 15px; /* Curved corners with 5px radius */
-    color: white; /* Text color (white for better visibility) */
-    cursor: pointer; /* Indicate clickable behavior */
-    font-weight: bold; /* Optional: Make button text bold */
+    
+    border-radius: 15px; 
+    color: white; 
+    cursor: pointer; 
+    font-weight: bold; 
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
 
@@ -292,18 +287,27 @@ color: white;
     display: flex;
     flex-direction: column;
     padding-inline:100px;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   #faq h2{
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: 100;
   }
   #faq div div{
     
     margin: 20px;
+   
     display: flex;
     
   }
+  #faq div div p{
 
+   color: #999;
+ 
+    
+  }
   .faqCard{
     display: flex;
     flex-direction: column;
