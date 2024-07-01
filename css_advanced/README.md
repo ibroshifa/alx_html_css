@@ -25,10 +25,9 @@ Bug Fixes: Identified a bug? Submit a pull request with a fix and clear explanat
 Feature Enhancements: Have an idea to make Smile School even better? Propose your feature and discuss it with the maintainers.
 Content Creation: Are you an expert in a particular aspect of smiling? Help us create engaging content for Smile School.
 Documentation Improvement: See room for improvement in the documentation? Submit a pull request with your edits.
-Before making any contributions, please review our contribution guidelines (link to specific CONTRIBUTING.md file if it exists).
-
+Before making any contributions, please review our contribution guidelines
 Let's Make Learning Smile!
 
 We believe that learning should be enjoyable and empowering. By using Smile School, you can learn valuable skills to enhance your smile and brighten your day.
 
-Feel free to reach out to the maintainers (mention contact information like email or discussion forum) if you have any questions or suggestions!
+Feel free to reach out to the maintainers if you have any questions or suggestions!
