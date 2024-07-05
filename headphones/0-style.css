@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.otf') format('otf'),
+         url('../fonts/SourceSansPro-Regular.otf') format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('../spincycle_ot-webfont.woff') format('woff'),
+         url('../spincycle_ot-webfont.woff') format('woff');
+    
+  }
+  @font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+     background-image: url(images/headphones_hero_1.jpg);
+     background-repeat: no-repeat; 
+     background-position: center top;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+/* .holberton-school-icon-menu {
+  font-family: "holberton_school-icon"; 
+  content: '\e911';
+  color: white;
+} */
+nav {
+     display: flex; 
+     align-items: center; 
+     justify-content: space-between; 
+     padding: 30px 30px 30px 30px;
+   }
+   
+   nav img {
+     height: auto; 
+     width: auto; 
+     
+   }
+
+   nav ul {
+     margin: 0; 
+     padding: 0; 
+     list-style: none; 
+   }
+   
+   nav li {
+     display: inline-block; 
+     margin-right: 20px; 
+   }
+   
+   nav a {
+     text-decoration: none; 
+     color: white; 
+     font-weight: bold; 
+     font-family: 'Spin Cycle OT', sans-serif;
+     font-size: 1em;
+   }
+   nav a:hover {
+     color: #FF6565; 
+     opacity: 0.9
+   }
+   nav a:active {
+    color: #FF6565; 
+    opacity: 0.9
+  }
+
+  /* @media only screen and (min-width: 480px) {
+    nav {
+      display: inline;
+    }
+  } */
+  @media (min-width: 768px) { /* For screens wider than 768px */
+    nav span {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) { /* For screens wider than 768px */
+    nav ul {
+      display: none;
+      
+    }
+    nav{
+      align-items: center; 
+      justify-content: start; 
+    }
+    nav img {
+     padding-left: 12vw;
+      
+    }
+    
+  }
+  
+  @media (max-width: 480px) { /* For screens narrower than 480px */
+    nav  ul{
+      display: none;
+    }
+   
+  }
+  
+main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center; 
+  text-align: center;
+  padding-inline: 10vw;
+ 
+  
+}
+main section h4{
+  font-size: 16px;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+main section h2{
+  font-size: 32px;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+main section p{
+  font-size: 16px;
+  line-height: 1.5;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  
+}
+main section button {
+  background-color: #FF6565; 
+  border: none; 
+  padding: 10px 20px; 
+  margin: 40px;
+
+  border-radius: 15px; 
+  color: white; 
+  cursor: pointer; 
+  font-weight: bold; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.toggle-button {
+  /* Style your button here */
+}
+
+.navigation {
+  display: none;
+  position: absolute; /* Adjust positioning as needed */
+  top: 50px; /* Adjust positioning as needed */
+  left: 0; /* Adjust positioning as needed */
+}
+
+.navigation:target {
+  display: block;
+} 
