@@ -115,11 +115,7 @@ nav {
     opacity: 0.9
   }
 
-  /* @media only screen and (min-width: 480px) {
-    nav {
-      display: inline;
-    }
-  } */
+
   @media (min-width: 768px) { /* For screens wider than 768px */
     nav span {
       display: none;
@@ -213,18 +209,13 @@ main section button {
   #whatWedoList{
     /* padding: 30px; */
     
-    display: flex; /* Use flexbox for horizontal arrangement */
-    flex-wrap: wrap; /* Allow images to wrap to next line if needed */
-    justify-content: space-between; /* Distribute images evenly */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     margin: 0 auto;
     align-items: center;
   }
-  .whatWeDoCard{
   
-    
-    /* Set image width to half the container width (2 images per row) */
-   /*margin: 10px; Add spacing between images */
-  }
   .whatWeDoCard span{
     color:#FF6565;font-size: 100px;
 
@@ -232,8 +223,8 @@ main section button {
   /* Media query for mobile screens (adjust breakpoint as needed) */
 @media only screen and  (max-width:  720px) {
     .whatWeDoCard {
-        width: 100%; /* Set image width to 100% on mobile */
-        margin: 5px; /* Adjust spacing for mobile layout */
+        width: 100%; 
+        margin: 5px; 
       }
     #whatWedoList{
         flex-direction: column;
@@ -244,18 +235,134 @@ main section button {
   @media only screen and  (min-width: 728px) and (max-width: 1020px){
    
     .whatWeDoCard {
-      width:  calc(50% - 20px); /* Set image width to 100% on mobile */
-      margin: 5px; /* Adjust spacing for mobile layout */
+      width:  calc(50% - 20px); 
+      margin: 5px; 
     }
   }
   @media only screen and (min-width:  1024px) {
    
     .whatWeDoCard {
-      width: calc(25% - 20px); /* Set image width to 100% on mobile */
-      margin: 5px; /* Adjust spacing for mobile layout */
+      width: calc(25% - 20px); 
+      margin: 5px; 
     }
   }
+  #thirdSection{
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat; 
+     background-position: center top;
+     background-size: cover;
+     text-align: center;
+    padding: 100px;
+    color:white;
   
+     /* height: 1000vw; */
+}
+.PentagonCard{
+    background-image: url(images/pentagone.png);
+    background-repeat: no-repeat; 
+     background-position: center top;
+      background-size: 200px 150px;;
+     text-align: center;
+     width: 200px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#thirdSection h2{
+  font-size: 32px;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  padding-top: 50px;
+
+}
+.PentagonCard h1{
+  font-size: 48px;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  
+}
+#thirdSection p{
+padding: 20px;
+font-family:   'Source Sans Pro', sans-serif;
+}
+
+
+@media only screen and  (max-width:  720px) {
+  .PentagonCard {
+      width: 100%; 
+      margin: 5px; 
+    }
+  #whatWedoList{
+      flex-direction: column;
+  }
+ 
+}
+
+@media only screen and  (min-width: 728px) and (max-width: 1020px){
+ 
+  .PentagonCard {
+    width:  calc(50% - 20px); 
+    margin: 5px; 
+  }
+}
+@media only screen and (min-width:  1024px) {
+ 
+  .PentagonCard {
+    width: calc(25% - 20px); 
+    margin: 5px; 
+  }
+}
+
+.container {
+  width: 400px; 
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+}
+
+
+input {
+  width: 100%;
+  padding: 5px; 
+  border: none; 
+  border-bottom: 1px solid #ccc;  
+  background-color: transparent;  
+  margin-bottom: 15px;
+  font-size: 16px; 
+  outline: none;  
+  padding-top: 30px;
+  font-family:   'Source Sans Pro', sans-serif;
+}
+
+input::-webkit-input-placeholder { 
+  color: black; 
+}
+
+input::-moz-placeholder{ 
+  color: black; 
+}
+
+
+.container{
+  text-align: center; 
+}
+.container h2{
+  font-size: 32px;
+  font-family:   'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+form button {
+  background-color: #FF6565; 
+  border: none; 
+  padding: 10px 20px; 
+  margin:  40px;
+  border-radius: 15px; 
+  color: white; 
+  cursor: pointer; 
+  font-weight: bold; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
   
 
   
