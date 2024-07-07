@@ -53,6 +53,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+:root {
+  --main-color: #FF6565;
+  --article-margin-inline:10vw;
+  --nav-padding:30px;
+  --main-heading-font-size:48px;
+  --paragraph-font-size:16px;
+  --paragraph-line-height:1.5;
+  --main-font-family:'Source Sans Pro', sans-serif;
+  --secondary-font-family:'Spin Cycle OT', sans-serif;
+}
+
 
 body {
 	line-height: 1;
@@ -79,7 +90,7 @@ nav {
      display: flex; 
      align-items: center; 
      justify-content: space-between; 
-     padding: 30px 30px 30px 30px;
+     padding: var(--nav-padding);
    }
    
    nav img {
@@ -103,15 +114,15 @@ nav {
      text-decoration: none; 
      color: white; 
      font-weight: bold; 
-     font-family: 'Spin Cycle OT', sans-serif;
+     font-family: var(--secondary-font-family);
      font-size: 1em;
    }
    nav a:hover {
-     color: #FF6565; 
+     color: var(--main-color); 
      opacity: 0.9
    }
    nav a:active {
-    color: #FF6565; 
+    color: var(--main-color); 
     opacity: 0.9
   }
 
@@ -155,31 +166,31 @@ main {
   color: white;
   align-items: center; 
   text-align: center;
-  padding-inline: 10vw;
+  padding-inline: var(--article-margin-inline);
   padding-block-start: 150px;
   padding-block-end: 100px;
  
   
 }
 main section h4{
-  font-size: 16px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-size: var(--paragraph-font-size);
+  font-family:   var(--main-font-family);
   font-weight: 600;
 }
 main section h2{
   font-size: 32px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
   font-weight: bold;
 }
 main section p{
-  font-size: 16px;
+  font-size: var(--paragraph-font-size);
   line-height: 1.5;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
   font-weight: 400;
   
 }
 main section button {
-  background-color: #FF6565; 
+  background-color: var(--main-color); 
   border: none; 
   padding: 10px 20px; 
   margin: 40px;
@@ -198,42 +209,37 @@ main section button {
 }
 #midSection h2{
     font-size: 32px;
-    font-family:   'Source Sans Pro', sans-serif;
+    font-family:   var(--main-font-family);
     font-weight: bold;
   }
   #midSection h4{
-    font-size: 16px;
-    font-family:   'Source Sans Pro', sans-serif;
+    font-size: var(--paragraph-font-size);
+    font-family:   var(--main-font-family);
     font-weight: 600;
   }
   #midSection p{
  
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
   }
   #whatWedoList{
     /* padding: 30px; */
     
-    display: flex; /* Use flexbox for horizontal arrangement */
-    flex-wrap: wrap; /* Allow images to wrap to next line if needed */
-    justify-content: space-between; /* Distribute images evenly */
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
     margin: 0 auto;
     align-items: center;
   }
-  .whatWeDoCard{
-  
-    
-    /* Set image width to half the container width (2 images per row) */
-   /*margin: 10px; Add spacing between images */
-  }
   .whatWeDoCard span{
-    color:#FF6565;font-size: 100px;
+    color:var(--main-color);
+    font-size: 100px;
 
   }
-  /* Media query for mobile screens (adjust breakpoint as needed) */
+  /* Media query for mobile screens  */
 @media only screen and  (max-width:  720px) {
     .whatWeDoCard {
-        width: 100%; /* Set image width to 100% on mobile */
-        margin: 5px; /* Adjust spacing for mobile layout */
+        width: 100%; 
+        margin: 5px; 
       }
     #whatWedoList{
         flex-direction: column;
@@ -244,15 +250,15 @@ main section button {
   @media only screen and  (min-width: 728px) and (max-width: 1020px){
    
     .whatWeDoCard {
-      width:  calc(50% - 20px); /* Set image width to 100% on mobile */
-      margin: 5px; /* Adjust spacing for mobile layout */
+      width:  calc(50% - 20px); 
+      margin: 5px; 
     }
   }
   @media only screen and (min-width:  1024px) {
    
     .whatWeDoCard {
-      width: calc(25% - 20px); /* Set image width to 100% on mobile */
-      margin: 5px; /* Adjust spacing for mobile layout */
+      width: calc(25% - 20px); 
+      margin: 5px; 
     }
   }
   

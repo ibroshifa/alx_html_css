@@ -54,6 +54,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+:root {
+  --main-color: #FF6565;
+  --article-margin-inline:10vw;
+  --nav-padding:30px;
+  --main-heading-font-size:48px;
+  --paragraph-font-size:16px;
+  --paragraph-line-height:1.5;
+  --main-font-family:'Source Sans Pro', sans-serif;
+  --secondary-font-family:'Spin Cycle OT', sans-serif;
+}
+
 body {
 	line-height: 1;
     
@@ -76,176 +87,180 @@ body {
   color: white;
 } */
 nav {
-     display: flex; 
-     align-items: center; 
-     justify-content: space-between; 
-     padding: 30px 30px 30px 30px;
-   }
-   
-   nav img {
-     height: auto; 
-     width: auto; 
-     
-   }
-
-   nav ul {
-     margin: 0; 
-     padding: 0; 
-     list-style: none; 
-   }
-   
-   nav li {
-     display: inline-block; 
-     margin-right: 20px; 
-   }
-   
-   nav a {
-     text-decoration: none; 
-     color: white; 
-     font-weight: bold; 
-     font-family: 'Spin Cycle OT', sans-serif;
-     font-size: 1em;
-   }
-   nav a:hover {
-     color: #FF6565; 
-     opacity: 0.9
-   }
-   nav a:active {
-    color: #FF6565; 
-    opacity: 0.9
-  }
-
-
-  @media (min-width: 768px) { /* For screens wider than 768px */
-    nav span {
-      display: none;
-    }
-  }
-
-  @media (max-width: 768px) { /* For screens wider than 768px */
-    nav ul {
-      display: none;
-      
-    }
-    nav{
-      align-items: center; 
-      justify-content: start; 
-    }
-    nav img {
-     padding-left: 12vw;
-      
-    }
-    
-  }
-  
-  @media (max-width: 480px) { /* For screens narrower than 480px */
-    nav  ul{
-      display: none;
-    }
-   
-  }
-  
-main {
-  display: flex;
-  flex-direction: column;
-  color: white;
+  display: flex; 
   align-items: center; 
-  text-align: center;
-  padding-inline: 10vw;
-  padding-block-start: 150px;
-  padding-block-end: 100px;
- 
+  justify-content: space-between; 
+  padding: var(--nav-padding);
+}
+
+nav img {
+  height: auto; 
+  width: auto; 
   
+}
+
+nav ul {
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+}
+
+nav li {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+nav a {
+  text-decoration: none; 
+  color: white; 
+  font-weight: bold; 
+  font-family: var(--secondary-font-family);
+  font-size: 1em;
+}
+nav a:hover {
+  color: var(--main-color); 
+  opacity: 0.9
+}
+nav a:active {
+ color: var(--main-color); 
+ opacity: 0.9
+}
+
+/* @media only screen and (min-width: 480px) {
+ nav {
+   display: inline;
+ }
+} */
+@media (min-width: 768px) { /* For screens wider than 768px */
+ nav span {
+   display: none;
+ }
+}
+
+@media (max-width: 768px) { /* For screens wider than 768px */
+ nav ul {
+   display: none;
+   
+ }
+ nav{
+   align-items: center; 
+   justify-content: start; 
+ }
+ nav img {
+  padding-left: 12vw;
+   
+ }
+ 
+}
+
+@media (max-width: 480px) { /* For screens narrower than 480px */
+ nav  ul{
+   display: none;
+ }
+
+}
+
+main {
+display: flex;
+flex-direction: column;
+color: white;
+align-items: center; 
+text-align: center;
+padding-inline: var(--article-margin-inline);
+padding-block-start: 150px;
+padding-block-end: 100px;
+
+
 }
 main section h4{
-  font-size: 16px;
-  font-family:   'Source Sans Pro', sans-serif;
-  font-weight: 600;
+font-size: var(--paragraph-font-size);
+font-family:   var(--main-font-family);
+font-weight: 600;
 }
 main section h2{
-  font-size: 32px;
-  font-family:   'Source Sans Pro', sans-serif;
-  font-weight: bold;
+font-size: 32px;
+font-family:   var(--main-font-family);
+font-weight: bold;
 }
 main section p{
-  font-size: 16px;
-  line-height: 1.5;
-  font-family:   'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  
+font-size: var(--paragraph-font-size);
+line-height: 1.5;
+font-family:   var(--main-font-family);
+font-weight: 400;
+
 }
 main section button {
-  background-color: #FF6565; 
-  border: none; 
-  padding: 10px 20px; 
-  margin: 40px;
+background-color: var(--main-color); 
+border: none; 
+padding: 10px 20px; 
+margin: 40px;
 
-  border-radius: 15px; 
-  color: white; 
-  cursor: pointer; 
-  font-weight: bold; 
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+border-radius: 15px; 
+color: white; 
+cursor: pointer; 
+font-weight: bold; 
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
 #midSection {
-    text-align: center;
-    padding: 100px;
+ text-align: center;
+ padding: 100px;
 }
 #midSection h2{
-    font-size: 32px;
-    font-family:   'Source Sans Pro', sans-serif;
-    font-weight: bold;
-  }
-  #midSection h4{
-    font-size: 16px;
-    font-family:   'Source Sans Pro', sans-serif;
-    font-weight: 600;
-  }
-  #midSection p{
+ font-size: 32px;
+ font-family:   var(--main-font-family);
+ font-weight: bold;
+}
+#midSection h4{
+ font-size: var(--paragraph-font-size);
+ font-family:   var(--main-font-family);
+ font-weight: 600;
+}
+#midSection p{
+
+font-family:   var(--main-font-family);
+}
+#whatWedoList{
+ /* padding: 30px; */
  
-  font-family:   'Source Sans Pro', sans-serif;
-  }
-  #whatWedoList{
-    /* padding: 30px; */
-    
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    margin: 0 auto;
-    align-items: center;
-  }
-  
-  .whatWeDoCard span{
-    color:#FF6565;font-size: 100px;
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: space-between; 
+ margin: 0 auto;
+ align-items: center;
+}
+.whatWeDoCard span{
+ color:var(--main-color);
+ font-size: 100px;
 
-  }
-  /* Media query for mobile screens (adjust breakpoint as needed) */
+}
+/* Media query for mobile screens  */
 @media only screen and  (max-width:  720px) {
-    .whatWeDoCard {
-        width: 100%; 
-        margin: 5px; 
-      }
-    #whatWedoList{
-        flex-direction: column;
-    }
-   
-  }
+ .whatWeDoCard {
+     width: 100%; 
+     margin: 5px; 
+   }
+ #whatWedoList{
+     flex-direction: column;
+ }
 
-  @media only screen and  (min-width: 728px) and (max-width: 1020px){
-   
-    .whatWeDoCard {
-      width:  calc(50% - 20px); 
-      margin: 5px; 
-    }
-  }
-  @media only screen and (min-width:  1024px) {
-   
-    .whatWeDoCard {
-      width: calc(25% - 20px); 
-      margin: 5px; 
-    }
-  }
+}
+
+@media only screen and  (min-width: 728px) and (max-width: 1020px){
+
+ .whatWeDoCard {
+   width:  calc(50% - 20px); 
+   margin: 5px; 
+ }
+}
+@media only screen and (min-width:  1024px) {
+
+ .whatWeDoCard {
+   width: calc(25% - 20px); 
+   margin: 5px; 
+ }
+}
   #thirdSection{
     background-image: url(images/headphones_hero_2.jpg);
     background-repeat: no-repeat; 
@@ -257,18 +272,6 @@ main section button {
   
      /* height: 1000vw; */
 }
-/* .PentagonCard{
-    /* background-image: url(images/pentagone.png); */
-    /* background-repeat: no-repeat; 
-     background-position: center top;
-      background-size: 200px 150px;;
-     text-align: center;
-     width: 200px;
-     height: 200px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center; */
-/* } */ 
 .PentagonCard div {
   background-color: #FF6565; 
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -282,20 +285,20 @@ main section button {
 }
 #thirdSection h2{
   font-size: 32px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
   font-weight: bold;
   padding-top: 50px;
 
 }
 .PentagonCard h1{
-  font-size: 48px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-size: var(--main-heading-font-size);
+  font-family:   var(--main-font-family);
   font-weight: bold;
   
 }
 #thirdSection p{
 padding: 20px;
-font-family:   'Source Sans Pro', sans-serif;
+font-family:   var(--main-font-family);
 }
 
 
@@ -343,7 +346,7 @@ input {
   font-size: 16px; 
   outline: none;  
   padding-top: 30px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
 }
 
 input::-webkit-input-placeholder { 
@@ -360,11 +363,11 @@ input::-moz-placeholder{
 }
 .container h2{
   font-size: 32px;
-  font-family:   'Source Sans Pro', sans-serif;
+  font-family:   var(--main-font-family);
   font-weight: bold;
 }
 form button {
-  background-color: #FF6565; 
+  background-color: var(--main-color); 
   border: none; 
   padding: 10px 20px; 
   margin:  40px;
